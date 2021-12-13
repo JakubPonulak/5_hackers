@@ -65,3 +65,5 @@ Jakub | Highlight commits / pull requests, TPT Work | [Link](https://github.com/
 Kevin | Highlight asynchronous access, TPT Work | [Link](https://github.com/JakubPonulak/5_hackers/issues/11) |
 Sreeja | Deployment & update process, TPT Work | [Link](https://github.com/JakubPonulak/5_hackers/issues/11) |
 Tristan | Progress overview, TPT Work | [Link](https://github.com/JakubPonulak/5_hackers/issues/11) |
+
+Jakub added this in his branch
