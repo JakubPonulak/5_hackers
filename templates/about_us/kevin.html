@@ -8,12 +8,12 @@
 {% block body %}
 <!-- CSS formatting for the background color (currently being overridden by deeper code) -->
 <style>
-                   body {
+    body {
         background-color: #ff9b80;
     }
 </style>
-<!- Try building a new body here ->
 <p>{{ text }}</p>
+<!- Try building a new body here ->
 <div style="margin: 2% 5% 5%; text-align:left; font-family: verdana,sans-serif;">
     <div class="col-12">
         <p style="font-size:45px">Welcome, my name is Kevin Chen!</p>
@@ -26,7 +26,7 @@
     </div>
     </body>
     <script>
-        // this function enables me to toggle between two images, showing my favorite places to go
+        // this function enables me to toggle between two images, showing my old and younger self
         var toggle = false
         function changeSrc() {
             if (toggle === true) {
@@ -38,18 +38,17 @@
         }
     </script>
 
-    <div style="text-align: center;">
+    <div style="text-align: left;">
         <img style="max-width: 290px; max-height: 400px" id="image1" src="/static/assets/kevinImages/kevin.PNG">
-        <img src="/static/assets/kevinImages/kevin3.jpg" height="400" width="290"/>
         <img src="/static/assets/kevinImages/kevin4.jpg" height="400" width="570"/>
-        <br><button onclick="changeSrc()">Toggle Old/Young Picture</button>
+        <img src="/static/assets/kevinImages/kevin3.jpg" height="400" width="290"/>
+        <br><button onclick="changeSrc()">Toggle Old to Young Photo</button>
 
         <p style="font-size:29px">More about me and my interests:</p>
         </p> I enjoy playing video games, hanging out with friends, eating good foods, traveling the world, and playing sports. I also enjoy watching football and basketball games when I have free time. I am interested in investments, primarily in the stock market.</p>
-        <img src="https://images.livemint.com/img/2020/06/03/1600x900/Valorant_1591218052835_1591218061187.jpg" width="200" height="160">
-        <img src="https://theundefeated.com/wp-content/uploads/2017/06/nbalogo.jpg?w=1024" width="200" height="160">
-        <img src="https://www.profootballnetwork.com/wp-content/uploads/2021/02/nfl-logo-shield-history-design-meaning.jpg" width="200" height="160">
-        <img src="data:image/png;base64,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" width="200" height="160">
+        <img src="https://images.livemint.com/img/2020/06/03/1600x900/Valorant_1591218052835_1591218061187.jpg" width="240" height="200">
+        <img src="https://theundefeated.com/wp-content/uploads/2017/06/nbalogo.jpg?w=1024" width="240" height="200">
+        <img src="https://www.profootballnetwork.com/wp-content/uploads/2021/02/nfl-logo-shield-history-design-meaning.jpg" width="240" height="200">
         <p></p>
         <p style="font-size:29px">My goals:</p>
         <p> Some goals that I have in life is to pursue a degree in finance, business related field, or technology. When I become successful in life I plan on putting a large amount of money into in investments, so that I will earn more sources of income. I also have dreams of working at an investment firm after graduating from college.</p>
@@ -88,6 +87,7 @@
         <img src="" style="height: 400px" >
     </div>
 </div>
+
 {% endblock %}
 
 <!- This is turning off birds background from base.html -->

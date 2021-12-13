@@ -58,12 +58,14 @@ def jakub():
 def kevin():
     url = "https://dad-jokes.p.rapidapi.com/random/joke"
 
+    payload = "{\"key1\": \"value\",\"key2\": \"value\"}"
     headers = {
+    'content-type': "application/json",
     'x-rapidapi-host': "dad-jokes.p.rapidapi.com",
     'x-rapidapi-key': "7c1d894378mshb7e7e6c6ecac61bp1f2fcbjsn264b46c0ce80"
     }
 
-    response = requests.request("GET", url, headers=headers)
+    response = requests.request("POST", url, headers=headers)
 
     text = response.text
     return render_template("about_us/kevin.html", text=text)
